@@ -47,4 +47,8 @@ public class UserServiceImpl implements UserService{
 		return userDao.findOne(uid);
 	}
 
+	//根据产品id查用户
+	public User findByPId(Integer pid){
+		return userDao.findByPId(pid);
+	};
 }

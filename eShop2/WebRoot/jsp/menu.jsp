@@ -26,6 +26,11 @@
                             href="${ pageContext.request.contextPath }/findOrderByUid/1">我的订单</a>
                     |
                 </li>
+                 <li id="headerLogin" class="headerLogin" style="display: list-item;">
+                    <a
+                            href="${ pageContext.request.contextPath }/messageList">我的消息</a>
+                    |
+                </li>
                 <li id="headerRegister" class="headerRegister"
                     style="display: list-item;"><a
                         href="${ pageContext.request.contextPath }/quit">退出</a>|

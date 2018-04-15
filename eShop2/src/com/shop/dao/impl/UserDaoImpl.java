@@ -53,5 +53,12 @@ public class UserDaoImpl extends BaseDaoImpl<User> implements UserDao{
 		query.setParameter(0, uid);
 		return (User)query.uniqueResult(); 
 	}
+	//根据产品id查用户
+	public User findByPId(Integer pid) {
+		String hql = "from User u where u.uid = (select userId from Product p where p.pid = ?)";
+		Query query = this.getCurrentSession().createQuery(hql);
+		query.setParameter(0, pid);
+		return (User)query.uniqueResult();
+	};
 
 }

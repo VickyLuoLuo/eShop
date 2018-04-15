@@ -17,4 +17,8 @@ public interface UserService {
 
 	// 根据用户的uid的值查询用户
 	public User findByUid(Integer uid);
+	
+	//根据产品id查用户
+	public User findByPId(Integer pid);
+
 }

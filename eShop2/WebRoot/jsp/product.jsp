@@ -29,10 +29,9 @@ function saveCart() {
 		//保存商品到购物车
 		document.getElementById("cartForm").submit();
 	}
-
-//换购
 function exchange() {
-	
+    //保存商品到购物车
+    document.getElementById("myProduct").submit();
 }
 </script>
 
@@ -198,10 +197,16 @@ function exchange() {
 					<div class="buy">
 						<input id="addCart" class="addCart" value="加入购物车" type="button"
 							onclick="saveCart()" />
-						<input id="exchange" class="exchange" value="我要换购" type="button"
-						onclick="exchange()" />
+					</div>
+					<div class="buy">
+						<input id="addCart" class="addCart" value="我要换购" type="button"
+							   onclick="exchange()" />
 					</div>
 				</div>
+			</form>
+
+			<form id="myProduct"
+				  action="${ pageContext.request.contextPath }/myProduct/1/${product.pid}" method="post">
 			</form>
 
 			<div id="bar" class="bar">

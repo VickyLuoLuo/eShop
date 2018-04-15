@@ -23,5 +23,9 @@ public interface UserDao extends BaseDao<User> {
 
 	// 查找单个用户
 	public User findOne(Integer uid);
+	
+	//根据产品id查用户
+	public User findByPId(Integer pid);
+
 
 }
