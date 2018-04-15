@@ -1,0 +1,9 @@
+body {
+	_width: 100%;
+	_height: 100%;
+	font: 12px tahoma, Arial, Verdana, sans-serif;
+	color: #666666;
+	background-color: #ffffff;
+	_background-attachment: fixed;
+	background: url(../images/article.gif);
+}
